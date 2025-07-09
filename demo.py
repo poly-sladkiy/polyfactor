@@ -15,15 +15,15 @@ def demo_simple_refactoring():
     problem_code = '''
 def process_user_data(name, email, age, address, phone, is_active, role, department):
     if name is None or name == "":
-        return False
+        return None
     if email is None or "@" not in email:
-        return False
+        return None
     if age is None or age < 0 or age > 150:
-        return False
+        return None
     if address is None or len(address) < 5:
-        return False
+        return None
     if phone is None or len(phone) < 10:
-        return False
+        return None
 
     user_data = {}
     user_data["name"] = name.strip().lower()

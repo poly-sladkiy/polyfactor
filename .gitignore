@@ -1,3 +1,4 @@
 .idea
-sample_project
 .venv
+sample_project
+__pycache__
